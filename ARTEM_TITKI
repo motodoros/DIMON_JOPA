@@ -1,0 +1,35 @@
+server.multicast.port=3030
+install.profile=small
+server.quartzDelegate=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+server.database.host={{ ip }}
+server.webapp.secure.port=7443
+server.database.upgrade.choice=Overwrite the HQ server database (ERASE all existing data)
+server.ha.bind_addr=*.*
+server.database-password=hq_password
+server.connection-validation-sql=select 1
+server.mail.sender=hqadmin@ca.sbrf.ru
+server.hibernate.dialect=org.hyperic.hibernate.dialect.PostgreSQLDialect
+server.admin.email=hqadmin@ca.sbrf.ru
+server.admin.username=hqadmin
+accept.unverified.certificates=false
+server.database.name=hq_db
+server.database.create=Yes
+server.use.custom.keystore=No
+server.mail.host=amun51.ca.sbrf.ru
+server.webapp.port=7080
+server.webapp.baseurl=http\://{{ ip }}\:7080/
+server.installdir=/home/hyperic
+server.keystore.path=../../conf/hyperic.keystore
+server.database=PostgreSQL
+server.overwrite=No
+server.multicast.addr=227.0.0.1
+server.encryption-key.auto=Yes
+server.database.port=5432
+server.database.choice=PostgreSQL
+server.database-url=jdbc\:postgresql\://{{ ip }}\:5432/hq_db
+server.database-driver=org.postgresql.Driver
+server.database-user=hq_user
+server.keystore.password=hyperic
+server.admin.password=hqadmin
+
+                
